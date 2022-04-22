@@ -4,7 +4,8 @@ from utils import Router
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:username@host:5432/assignment'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:username@localhost:5432/assignment'
+
 
 db = SQLAlchemy(app)
 
